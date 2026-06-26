@@ -1,0 +1,602 @@
+html
+{
+    height: 100%;
+    width: 100%;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f2f4f8;
+}
+
+.menu
+{
+    width: 100%;
+    background-color: #000080;
+    overflow: auto;
+}
+
+.menu a
+{
+    float: left;
+    border-right: 1px solid white;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    width: 23.36%;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu a:hover, .active
+{
+    background-color: #0147AB;
+    border-bottom-style: solid;
+    border-bottom-color: #0080FF;
+    border-bottom-width: 2px;
+}
+
+.intro
+{
+    position: relative;
+    overflow: hidden;
+}
+
+#ntu_mae
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay
+{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 0.85)25%, rgba(255, 255, 255, 0)60%);
+}
+
+.text_image
+{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 2;
+}
+
+.text_image h2 h3 p
+{
+    margin-top: 30px;
+}
+
+.text_image h2
+{
+    color: #000080;
+    font-size: 50px;
+}
+
+.text_image h3
+{
+    color: #0147AB;
+    font-size: 45px;
+    margin-top: -30px;
+}
+
+.text_image p
+{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text_image button
+{
+    background-color: #000080;
+}
+
+.text_image a
+{
+    color: white;
+}
+
+#ntu_logo
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 100px;
+}
+
+footer
+{
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: white;
+    background: #000080;
+}
+
+footer a
+{
+    color: white;
+}
+
+#contact_us
+{
+    width: 100%;
+    text-align: center;
+}
+
+input[type=text], input[type=email], textarea
+{
+    width: 80%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: vertical;
+}
+
+button
+{
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #A1A1A1;
+}
+
+button:hover
+{
+    background-color:#0147AB;
+}
+
+
+
+#liveStatus
+{
+    color: grey;
+    font-weight: bold;
+}
+
+#sample
+{
+    color: grey;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.status
+{
+    text-align: center;
+}
+
+.cards
+{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card, .card_overview
+{
+    background: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h2, .map_section h2, .card h3, .cards_overview h2, .card_overview h3, .card_battery p, .card h4, .project h2, .tech_used h2, .tech_used h3
+{
+    color: #000080;
+}
+
+.card img, .card_overview img
+{
+    width: 50px;
+}
+
+.card_status img
+{
+    width: 100px;
+}
+
+.onoff
+{
+    color : grey;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#card_status
+{
+    border: 5px solid grey;
+    z-index: 1;
+}
+
+.card .card_sensor p
+{
+    position: relative;
+    top: 0px;
+}
+
+.card_fall img, .card_sensor img
+{
+    width: 100px;
+}
+
+.card_fall p
+{
+    font-size: 25px;
+    color: #0147AB;
+}
+
+.card_buzzer_led img
+{
+    position: relative;
+    top: 20px;
+    right: 80px;
+}
+
+.card_buzzer_led p
+{
+    position: relative;
+    top: -30px;
+    left: 20px;
+    color: #000080;
+}
+
+.card_accelerometer img
+{
+    position: relative;
+    right: 100px;
+    width: 40px;
+}
+
+.card_battery img
+{
+    position: relative;
+    right: 80px;
+    width: 40px;
+}
+
+.card_accelerometer h3, .card_battery h3
+{
+    position: relative;
+    bottom: 65px;
+    font-size: 25px;
+}
+
+.card_accelerometer h3
+{
+    left: 20px;
+}
+
+.card_sensor h3, .card_buzzer h3, .card_led h3
+{
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    font-size: 25px;
+}
+
+
+.map_section
+{
+    background: white;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+iframe
+{
+    height: 200px;
+    background: #dbeafe;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.xyz
+{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card_battery p
+{
+    font-size: 30px;
+    font-weight: bold;
+    bottom: 10px;
+}
+
+.cards_overview, .tech_used
+{
+    background: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card_overview .card_sensor img, .card_overview .card_led img, .card_overview .card_buzzer img
+{
+    position: relative;
+    width: 50px;
+    bottom: 85px;
+    right: 80px;
+}
+
+.card_sensor p
+{
+    position: relative;
+    bottom: 40px;
+    color: #4B0076; 
+    font-size: 30px;
+}
+
+.card_buzzer p, .card_led p
+{
+    position: relative;
+    color: #000080;
+    font-size: 30px;
+    bottom: 40px;
+}
+
+.card_gps p
+{
+    font-weight: bold;
+    color: grey;
+    font-size: 20px;
+}
+
+.card h4
+{
+    font-size: 20px;
+}
+
+.project
+{
+    width: 100px;
+    height: 290px;
+}
+
+.project h2, .project p
+{
+    position: relative;
+    width: 550px;
+    margin-left: 30px;
+    margin-top: 30px;
+    top: 50px;
+}
+
+.project img
+{
+    position: absolute;
+    width: 900px;
+    height: 45%;
+    right: 10px;
+    top: 200px;
+    z-index: -1;
+}
+
+.overlay_proj
+{
+    position: absolute;
+    width: 500px;
+    height: 45%;
+    margin-top: 200px;
+    margin-left: 600px;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to right, #f2f4f8 0%, rgba(249, 250, 253, 0.80)20%, rgba(249, 250, 253, 0.60)40%, rgba(255, 255, 255, 0)60%);
+    z-index: -1;
+}
+
+.technologies
+{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tech
+{
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.tech img:not(#tech_accelerometer img)
+{
+    width: 100px;
+}
+
+#tech_accelerometer img
+{
+    width:150px;
+}
+
+.feature img
+{
+    float: left;
+}
+
+.feature_text
+{
+    text-align: left;
+    margin-left: 80px;
+}
+
+#team_member h3
+{
+    font-size: 20px;
+}
+
+#team_icon
+{
+    width: 70px;
+    position: absolute;
+    right: 430px;
+    bottom: -430px;
+    /*bottom: -530px;*/
+}
+
+#dropdown, #dropup
+{
+    width: 50px;
+    position: absolute;
+    right: 50px;
+    bottom: -420px;
+    /*bottom: -520px;*/
+}
+
+#dropdown
+{
+    display: block;
+}
+
+.member, #dropup
+{
+    display: none;
+}
+
+.member_left img
+{
+    width: 300px;
+    margin-top: 20px;
+    float: left;
+}
+
+.member_left::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.member_left h3, .member_left p
+{
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.member_right img
+{
+    width: 300px;
+    margin-top: 20px;
+    float: right;
+}
+
+.member_right::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.member_right h3, .member_right p
+{
+    position: relative;
+    top: 40px;
+}
+
+#license 
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    font-family: Arial, sans-serif;
+}
+
+.info_block {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info_block:last-child {
+  border-bottom: none;
+}
+
+.info_block img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: #000080;
+}
+
+.info h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #000080;
+}
+
+.info p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.info_block:hover {
+  background: #f9fafb;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  padding-left: 10px;
+}
